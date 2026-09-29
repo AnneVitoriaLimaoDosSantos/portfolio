@@ -1,4 +1,20 @@
-   <!-- =====================
+
+    script>
+        const menuButton = document.getElementById('menuButton');
+        const navMenu = document.getElementById('menu');
+
+        menuButton.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Fecha o menu ao clicar em algum link (bom para celulares)
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+       <!-- =====================
          JAVASCRIPT
     ====================== -->
 
